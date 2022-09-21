@@ -1,0 +1,25 @@
+# Exercício de Casa 🏠 
+
+## Introdução à Web e API
+
+Pesquise sobre os níveis de maturidade de Richardson e responda:
+1) qual nível de maturidade corresponde ao CRUD (Create, Read, Update, Delete)?
+O CRUD pressupõe uma aplicabilidade correta dos verbos HTTP (GET/POST/PUT/DELETE), no nivelamento de maturidade de Richardson ele afirma a utilização semântica correta dos verbos acontece a partir do nível 2, portanto nível correspondente ao CRUD. 
+
+2) qual a relação entre os métodos HTTP e o CRUD?
+O CRUD está diretamente relacionado aos verbos/métodos que norteiam o protocolo HTTP, assim GET, POST, PUT e DELETE se referem às ações do CRUD, de criar(create), ler(read), atualizar(update) e apagar(delete) os dados e informações.
+
+3) o que é HATEOAS? Ele é obrigatório para que uma API seja considerada RESTful?
+HATEOAS e uma interligação entre os caminhos dos recursos, ou seja, as URN apresentam os links para os recursos e estes apresentam o link inverso, de retorno para a URN em que ele está localizado. O HATEOAS otimiza o consumo de APIs com seus hiperlinks, entretanto não é obrigatório para que uma API seja considerada RESTful, já a aplicação dos princípios REST, sim.
+
+4) O que quer dizer quando dizemos que uma API é idempotente?
+De acordo com o MDN (https://developer.mozilla.org/pt-BR/docs/Glossary/Idempotent) a idempotencia esta relacionada a integridade do estado do servidor, ou seja, quantas vezes seja chamado um metodo, tantas vezes o servidor retornara a mesma respota. Assim, todos os verbos HTTP seguros são considerados idempotentes (GET, HEAD, OPTIONS) e além deles os verbos PUT e DELETE também são idempotentes, isso porque mesmo após uma chamada deles o servidor vai retornar respostas iguais às solicitações subsequentes.
+
+5) Qual a diferença entre os métodos PUT e PATCH?
+O método PUT substitui, fazendo uma alteração completa nos dados do recurso (ou cria, caso não exista, no entanto é mais recomendado utilizar o método POST para isso), o PATCH faz uma alteração parcial nos dados do recurso.
+
+
+
+6) Do arquivo filmes.js retorne no terminal o Titulo, Ano e Genero. (desafio: apresente cada Genero em linhas separadas)
+7) Do arquivo colors-rgb retorne no terminal o RGB como no exemplo: "aliceblue RGB: 240, 248, 255, 1"
+8) Do arquivo estados-cidade dado uma sigla retorne no terminal o lista de cidades

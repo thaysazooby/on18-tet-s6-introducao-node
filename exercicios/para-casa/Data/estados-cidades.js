@@ -5732,3 +5732,21 @@ const estados = [
         ]
       }
     ]
+
+
+// EXERCICIO 8) Do arquivo estados-cidade dado uma sigla retorne no terminal o lista de cidades
+
+let sigla = "AC" 
+let estadosTratado = 0
+
+for(let i = 0; i < estados.length; i++){
+  estadosTratado = estados[i]
+  // console.log(estadosTratado)
+  if (sigla == estadosTratado[0]){
+    console.log(estadosTratado[i][2])
+  }
+}
+
+
+
+

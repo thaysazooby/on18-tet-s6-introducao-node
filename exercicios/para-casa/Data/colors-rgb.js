@@ -149,3 +149,20 @@ const obj = [{
     "yellowgreen": [154, 205, 50, 1],
     "rebeccapurple": [102, 51, 153, 1]
 }]
+
+// EXERCICIO 7) Do arquivo colors-rgb retorne no terminal o RGB como no exemplo: "aliceblue RGB: 240, 248, 255, 1"
+
+let coresRGB = 0
+
+for (let i = 0; i < obj.length; i++){
+    coresRGB = obj[i]
+    console.log(Object.keys(coresRGB))
+    // console.log(coresRGB)
+
+    let dadosRGB = coresRGB
+    for(let j = 0; j < coresRGB.length; j++){
+        dadosRGB = dadosRGB.toString()
+        console.log(dadosRGB[key] + `RBG: ` + dadosRGB[j].join(", "))
+    }
+}
+
